@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Todo List</title>
+        <title>Content List</title>
         <!-- CSS And JavaScript -->
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
         <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
@@ -10,6 +10,23 @@
         <link rel="stylesheet" href="{% static 'css/todo.css' %}">
     </head>
     <body>
+        <style>
+        button{
+            background-color: red;
+            border: 1px solid red;
+        }
+        body{
+            background: url('https://wallpaper.thaiware.com/upload/wallpaper/2008_11/medium/4048_4266_081110123248_65.jpg');
+        }
+        /* .containner{
+            background-color:palevioletred;
+            margin-top: 25px;
+        } */
+        table{
+            background-color: whitesmoke;
+            padding: 10px;
+        }
+        </style>
         <div class="container">
             {% block content %}
             {% endblock %}
